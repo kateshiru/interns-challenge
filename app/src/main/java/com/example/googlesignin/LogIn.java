@@ -32,7 +32,9 @@ public class LogIn extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+
         initializeUI();
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,14 +44,14 @@ public class LogIn extends AppCompatActivity {
 
             }
         });
-     /*   btn_create.setOnClickListener(new View.OnClickListener() {
+
+        btn_create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LogIn.this,SignUp.class);
                 startActivity(intent);
             }
-        });*/
-
+        });
 
     }
 
@@ -93,5 +95,6 @@ public class LogIn extends AppCompatActivity {
         email = findViewById(R.id.login_email);
         password = findViewById(R.id.login_password);
         progressBar = findViewById(R.id.progressBar);
+        btn_create = findViewById(R.id.btn_create);
     }
 }
